@@ -4,10 +4,9 @@
 4        //int expectednums[]=new int[nums.length];
 5        for(int i=1;i<nums.length;i++){
 6            if(nums[i]!=nums[i-1]){
-7                nums[k]=nums[i];
-8                k++;
-9            }
-10        }
-11     return k; 
-12    }
-13}  
+7                nums[k++]=nums[i];
+8            }
+9        }
+10     return k; 
+11    }
+12}  
