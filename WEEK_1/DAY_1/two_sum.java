@@ -1,4 +1,9 @@
-class Solution {
+package WEEK_1.DAY_1;
+
+import java.util.HashMap;
+
+public class two_sum {
+    class Solution {
     public int[] twoSum(int[] nums, int target) {
       HashMap<Integer, Integer> map=new HashMap<>();
       for(int i=0;i<nums.length;i++){
@@ -10,4 +15,5 @@ class Solution {
       }
      return new int[]{};
     }
+}
 }

@@ -1,4 +1,6 @@
-class Solution {
+package WEEK_1.DAY_3;
+
+public class squares_of_sorted_array {
     public int[] sortedSquares(int[] nums) {
         int n=nums.length;
         int ans[]=new int[n];
