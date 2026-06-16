@@ -1,0 +1,27 @@
+package WEEK_3.DAY_2;
+
+public class RemoveNthNodeFromEndofList {
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode fast = dummy;
+        ListNode slow = dummy;
+
+        // fast ko n steps aage le jao
+        for (int i = 0; i < n; i++) {
+            fast = fast.next;
+        }
+
+        // dono ko saath move karo
+        while (fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        // nth node from end remove
+        slow.next = slow.next.next;
+
+        return dummy.next;
+    }
+}
